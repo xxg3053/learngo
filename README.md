@@ -14,6 +14,7 @@
 并发编程：goroutine和channel、理解调度器、多样示例   
 
 ##### 变量
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/base.go)
 - 变量类型写在变量名之后
 - 编译器可推测变量类型
 - 没有char，只有rune
@@ -21,6 +22,7 @@
 - 枚举、iota关键字
 
 ##### 条件
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/branch.go)
 - for，if后面的条件没有括号
 - if条件里可以定义变量
 - 没有while
@@ -29,6 +31,7 @@
 ##### 数组、切片、map
 推荐用range遍历   
 ###### 数组
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/arrays.go)
 - 数组是值类型
 - ```[10]int```和```[20]int```是不同类型
 - 调用```func f(arr [10]int)```会拷贝数组 
@@ -41,17 +44,20 @@
 ###### 字符
 
 ##### 函数
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/func.go)
 - 返回多个值，可以起名字
 - 函数作为参数
 - 没有默认参数，可选参数
 - 可变参数列表
 
 ##### 指针
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/pointer.go)
 - 指针不能运算
 - 值传递和引用传递？go语言只有值传递一种方式
 
 
 ##### goroutine
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/goroutine/goroutine.go)
 协程Coroutine
 - 轻量级"线程"
 - 非抢占式多任务处理，由协程主动交出控制权（runtime.Gosched()//交出协程控制权）
@@ -59,6 +65,7 @@
 - 多个协程可能在一个或多个线程上运行
 
 ##### channel
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/channel/done.go)
 - channel
 - buffered channel
 - range
