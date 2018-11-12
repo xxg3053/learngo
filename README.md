@@ -37,7 +37,11 @@
 - 调用```func f(arr [10]int)```会拷贝数组 
 - 在go语言中一般不直接使用数组
 
-###### 切片
+###### 切片(Slice)
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/slice.go)
+- Slice本身没有数据，是对底层array的一个view
+- reslice
+- Slice的扩展
 
 ###### map
 
