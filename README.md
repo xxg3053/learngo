@@ -44,8 +44,32 @@
 - Slice的扩展
 
 ###### map
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/slice.go)
+- map[k]v, m[k]m[k]v
+- 创建: make(map[string]int)
+- m[key]
+- key不存在，获取value类型的初始值
+- 使用range遍历key
+- 不抱着遍历顺序
+- len获得元素个数
+###### map的key
+- map使用哈希表，必须可以比较相等
+- 除了slice, map, function的内建类型都可以作为key
+- struct类型不包含上述字段，可以可以作为key
+
+示例：寻找最长不包含重复字符串的子串
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/nonrepeating.go)
 
 ###### 字符
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/strings.go)
+rune相当于go的char
+- range 遍历pos, rune对
+- 使用utf8.RuneCountInString获取字符数量
+- 使用len获取字节长度
+- 使用[]byte获取字节
+- strings包
+- Fields, Split, Join
+- contains, Index...
 
 ##### 函数
 [代码](https://github.com/xxg3053/learngo/blob/master/lang/func.go)
@@ -59,6 +83,15 @@
 - 指针不能运算
 - 值传递和引用传递？go语言只有值传递一种方式
 
+##### 面向"对象"
+
+##### 面向接口
+
+##### 函数式编程
+
+##### 错误处理和资源管理
+
+##### 测试与性能调优
 
 ##### goroutine
 [代码](https://github.com/xxg3053/learngo/blob/master/lang/goroutine/goroutine.go)
@@ -76,6 +109,9 @@
 - 理论基础：Communication Sequential Process(CSP)
 - Don`t communicate by sharing memory; share memory by communicating
 - 不要通过共享内存来通信；通过通信来共享内存
+
+##### http及其他标准库
+
 
 #### 实战项目
 分布式爬虫   
