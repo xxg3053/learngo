@@ -28,6 +28,19 @@
 - 没有while
 - switch不需要break， 也可以直接switch多个条件
 
+##### 函数
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/func.go)
+- 返回多个值，可以起名字
+- 函数作为参数
+- 没有默认参数，可选参数
+- 可变参数列表
+
+##### 指针
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/pointer.go)
+- 指针不能运算
+- 值传递和引用传递？go语言只有值传递一种方式
+
+
 ##### 数组、切片、map
 推荐用range遍历   
 ###### 数组
@@ -71,19 +84,30 @@ rune相当于go的char
 - Fields, Split, Join
 - contains, Index...
 
-##### 函数
-[代码](https://github.com/xxg3053/learngo/blob/master/lang/func.go)
-- 返回多个值，可以起名字
-- 函数作为参数
-- 没有默认参数，可选参数
-- 可变参数列表
-
-##### 指针
-[代码](https://github.com/xxg3053/learngo/blob/master/lang/pointer.go)
-- 指针不能运算
-- 值传递和引用传递？go语言只有值传递一种方式
-
 ##### 面向"对象"
+[代码](https://github.com/xxg3053/learngo/blob/master/lang/oop.go)
+- go语言仅支持封装，不支持继承和多态
+- go语言没有class, 只有struct
+- 显示定义和命名方法接收者
+- 只有使用指针才可以改变结构内容
+- nil指针也可以调用方法
+
+###### 值接收者 VS 指针接收者
+- 要改变内容必须使用指针接收者
+- 结构过大也考虑使用指针接收者
+- 一致性：如有指针接收者，最好都是指针接收者
+- 值接收者是go语言特有
+
+###### 封装
+- 名字一般使用CamelCase
+- 首字母大写：public
+- 首字母小写：private
+
+###### 包
+- 每个目录一个包，不一定和目录名相同
+- main包包含可执行入口
+- 为结构定义的方法必须放在同一个包内
+- 可以是不同文件
 
 ##### 面向接口
 
