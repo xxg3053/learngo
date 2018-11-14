@@ -1,5 +1,14 @@
 # study go
 
+#### 安装第三方模块
+```
+go get xxx
+```
+#### 编译
+```
+GOOS=linux GOARCH=amd64 go build main.go
+```
+
 #### 特别
 - 没有对象，没有继承多态，没有泛型，没有try/catch
 - 有接口，函数式编程，CSP并发模型（goroutine + channel）
